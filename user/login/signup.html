@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Register | BloodCamp</title>
+    <meta charset="utf-8">
+    <!-- <title>Transparent Login Form UI</title> -->
+    <link rel="stylesheet" href="trans.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="content">
+          <header>Register for blood camp</header>
+          <div class="signup">
+          <a href="#"></a>
+              
+    <form method="post" action="booking.php">
+        
+        <div class="field space">
+            <span class="fa fa-user"></span>
+            <input type="text" name="Name" required placeholder="Name">
+          </div>
+        
+          <div class="field space">
+            <span class="fa fa-envelope"></span>
+            <input type="text" name = "Email" required placeholder="Email">
+          </div>
+        
+        <div class="field space">
+            <span class="fa fa-phone"></span>
+            <input type="text" name = "Phone_no" required placeholder="phonenumber">
+          </div>
+        
+       
+        <div class="field space">
+            <span class="fas fa-tint"></span>
+            <input type="text" name = "Blood_group" required placeholder="Blood group">
+            
+          </div>
+        <div class="field space">
+            <span class="fa fa-location-arrow"></span> 
+            <select id="location" name="location">
+        <option value="Select the location">Select the location</option>
+                
+        <option value="Ahana hospital">Ahana Hospitals</option>
+                
+        <option value="Thiagarajan Mills, Kappalur">Thiagarajan Mills, Kappalur</option>
+                
+        <option value=" OTTERI Chennai.12."> OTTERI Chennai.12.</option>
+        
+        <option value=" Friends Association, Jafferkhanpet"> Friends Association, Jafferkhanpet</option>
+                
+        <option value=" Royapuram Chennai."> Royapuram Chennai.</option>
+                
+        <option value="  Hotel Taj Vivanta,coimbatore"> Hotel Taj Vivanta,coimbatore</option>
+                
+        <option value=" Thirupur">Thirupur</option>
+                
+        <option value=" GOVT ARTS AND SCIENCE COLLEGE VALPARI">Govt arts and science college valpari</option>
+                
+        <option value=" A.P.A. College of Arts & Culture Palani"> A.P.A. College of Arts & Culture Palani</option>
+                
+        <option value=" North School,Nallipalaiyam"> North School,Nallipalaiyam</option>
+                
+        <option value=" cms college of engineering ernapuram namakkal">cms college of engineering ernapuram&nbsp;&nbsp;&nbsp;&nbsp;  </option>
+                
+        <option value=" Bannari Amman College">Bannari Amman College</option>
+                
+        <option value=" Traders Association office, Hosur"> Traders Association office, Hosur</option>
+                
+        <option value=" GMC.Hospital,Pudukkottai"> GMC.Hospital,Pudukkottai</option>
+              
+        </select>
+          </div>
+        <div class="field space">
+        <input type="submit" value="Register" onclick="">
+        </div>
+        
+</form>
+             
+    
+        </div>
+</div>
+</div>
+<script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+    </script>
+  </body>
+</html>
